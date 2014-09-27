@@ -8,7 +8,15 @@
 	<!-- endbower -->
   	
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-	<link href="styles/main.css" rel="stylesheet" type="text/css">
+
+	<!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/responsive-nav/responsive-nav.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <!-- endbuild -->
 </head>
 <body>
 	<div id="wrapper">
@@ -131,9 +139,11 @@
 		</footer>
 	</div>
 
+    <!-- build:js(.) scripts/vendor.js -->
 	<!-- bower:js -->
 	<script src="bower_components/responsive-nav/responsive-nav.js"></script>
 	<!-- endbower -->
+	<!-- endbuild -->
 
 	<script type="text/javascript">
 		var nav = responsiveNav(".nav-collapse");
@@ -141,28 +151,8 @@
 
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-	<script type="text/javascript">
-
-		var _document = document;
-
-		var spinner = _document.createElement('div');
-		spinner.setAttribute("class", "spinner");
-
-		for(var i = 1; i <= 5; i++) {
-
-			var rect = _document.createElement('div');
-			rect.setAttribute("class", "rect" + i);
-			spinner.appendChild(rect);
-
-		}
-
-		var elements = _document.querySelectorAll('.loader-spinner');		
-		for(var id in elements) {			
-			elements[id].innerHTML = spinner.outerHTML;			
-		}
-
-	</script>
-
-	
+	<!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
