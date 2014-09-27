@@ -1,0 +1,23 @@
+// breakpoints and tweakpoints
+// it's better to have em breakpoints, you shouldn't focus on popular devices but ALL devices
+// tweakpoints: 
+$bp-small : 20em; //(320px)
+$bp-small-2 : 30em; //(480px)
+$bp-small-3 : 37.5em; //(600px)
+$bp-med : 48em; //(768px)
+$bp-med-2 : 56.25em; //(900px)
+$bp-large : 63.75em; //(1020px)
+$bp-large-2 : 81.25em; //(1300px)
+
+$primary-color: #ebebeb;
+$blue: #00a8c6;
+$blue-lighter: #40c0cb;
+$green: #8fbe00;
+$white: #fff;
+$content-color: #fff;
+
+$wrapper: $bp-large;
+
+$nav-height: 55px;
+
+

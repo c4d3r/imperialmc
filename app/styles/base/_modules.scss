@@ -1,0 +1,26 @@
+.module {
+	background: #fafafa;
+	border: 1px solid #ececec;
+	box-sizing: border-box;
+	border-radius: 2px;
+
+	.module-header {
+		h2 {
+			border-bottom: 2px solid rgba(143,190,0,0.3);
+			font-weight: normal;
+			padding: 5px;
+			color: #494949;
+			margin: 0;
+		}
+	}
+
+	.module-content {
+		min-height:100px;
+		padding:10px;
+		box-sizing: border-box;
+	}
+
+	& + .module {
+		margin-top:15px;
+	}
+}

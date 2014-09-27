@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dancraft</title>
+
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/responsive-nav/responsive-nav.css" />
+	<!-- endbower -->
+  	
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<nav class="nav-collapse wrapper">
+				<ul>
+					<li><a href="#">Forum</a></li>
+					<li><a href="#">Store</a></li>
+					<li><a href="#">Vote</a></li>
+					<li><a href="#" class="logo">Dancraft</a></li>
+					<li><a href="#">Leaderboard</a></li>
+					<li><a href="#">Play</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div class="wrapper" id="content">
+			<section id="main">
+				<article>
+					<div class="article-heading">
+						<h2>Example news post</h2>
+						<span class="article-date">29 Jan, 2014<br/>15:23</span>
+					</div>				
+					<div class="article-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis dui eu porta efficitur. Etiam sollicitudin auctor dui quis faucibus. Vestibulum mauris lorem, pretium et congue nec, hendrerit ut lacus. Sed nec risus vitae nisl molestie elementum mollis vel quam. Pellentesque auctor diam ac nisi elementum egestas. Aenean mollis felis eget risus malesuada malesuada. Quisque vel urna sit amet neque condimentum tincidunt a at magna. Aenean varius nec sapien bibendum porta. Duis ut arcu at arcu hendrerit vulputate ut non nulla. Sed ut ipsum vitae magna pellentesque accumsan. Suspendisse pellentesque interdum justo, id congue neque venenatis vitae.</p>
+					</div>
+					<div class="article-footer">
+						<a href="#">Comments (30)</a>
+						<a href="#">Posted by John Doe</a>
+					</div>
+				</article>
+
+				<article>
+					<div class="article-heading">
+						<h2>Example news post</h2>
+						<span class="article-date">29 Jan, 2014<br/>15:23</span>
+					</div>				
+					<div class="article-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis dui eu porta efficitur. Etiam sollicitudin auctor dui quis faucibus. Vestibulum mauris lorem, pretium et congue nec, hendrerit ut lacus. Sed nec risus vitae nisl molestie elementum mollis vel quam. Pellentesque auctor diam ac nisi elementum egestas. Aenean mollis felis eget risus malesuada malesuada. Quisque vel urna sit amet neque condimentum tincidunt a at magna. Aenean varius nec sapien bibendum porta. Duis ut arcu at arcu hendrerit vulputate ut non nulla. Sed ut ipsum vitae magna pellentesque accumsan. Suspendisse pellentesque interdum justo, id congue neque venenatis vitae.</p>
+					</div>
+					<div class="article-footer">
+						<a href="#">Comments (30)</a>
+						<a href="#">Posted by John Doe</a>
+					</div>
+				</article>
+			</section>
+
+			<aside id="sidebar">
+				<div id="box-ip">
+					<button class="button-green">play.dancraft.net</button>
+				</div>
+
+				<div class="module">
+					<div class="module-header">
+						<h2>Login</h2>
+					</div>
+					<div class="module-content">
+						<form action="#" method="POST">
+							<div class="form-group">
+								<input type="text" placeholder="Account name">
+							</div>	
+							<div class="form-group">
+								<input type="password" placeholder="password">
+							</div>
+							<div class="form-group">
+								<input type="checkbox">Remember me
+								<button class="button-blue">Login</button>							
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="module">
+					<div class="module-header">
+						<h2>Voting</h2>
+					</div>
+					<div class="module-content">
+						<div class="loader-spinner"></div>									
+					</div>
+				</div>
+
+				<div class="module">
+					<div class="module-header">
+						<h2>Latest Posts</h2>
+					</div>
+					<div class="module-content">
+						<div class="loader-spinner"></div>	
+					</div>
+				</div>
+
+				<div class="module">
+					<div class="module-header">
+						<h2>Twitter</h2>
+					</div>
+					<div class="module-content">
+						<a class="twitter-timeline" href="https://twitter.com/DancraftMC" data-widget-id="515791341628825601">Tweets by @DancraftMC</a>
+					</div>
+				</div>
+			</aside>
+		</div>
+
+		<footer>
+			<div id="footer-holder" class="wrapper">
+				<p id="footer-copyright" class="left">
+					<a class="logo" href="#">Dancraft</a><br/>
+	            	All Rights Reserved 2013 &copy; Imperial Minecraft, Created by <a href="mailto:c4d3r@hotmail.com">C4D3R</a>
+	        	</p>
+	    		<nav id="footer-links" class="right">
+	    			<ul>
+	    				<li><a href="/app_dev.php/home">Home</a></li>
+	    				<li><a href="/app_dev.php/forum/">Forums</a></li>
+	    				<li><a href="/app_dev.php/shop">Shop</a></li>
+	    				<li><a href="#">Play</a></li>
+	    				<li><a href="#">Other</a></li>
+	    				<li><a href="/app_dev.php/login">Login</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	</div>
+
+	<!-- bower:js -->
+	<script src="bower_components/responsive-nav/responsive-nav.js"></script>
+	<!-- endbower -->
+
+	<script type="text/javascript">
+		var nav = responsiveNav(".nav-collapse");
+	</script>
+
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	<script type="text/javascript">
+
+		var _document = document;
+
+		var spinner = _document.createElement('div');
+		spinner.setAttribute("class", "spinner");
+
+		for(var i = 1; i <= 5; i++) {
+
+			var rect = _document.createElement('div');
+			rect.setAttribute("class", "rect" + i);
+			spinner.appendChild(rect);
+
+		}
+
+		var elements = _document.querySelectorAll('.loader-spinner');		
+		for(var id in elements) {			
+			elements[id].innerHTML = spinner.outerHTML;			
+		}
+
+	</script>
+
+	
+</body>
+</html>

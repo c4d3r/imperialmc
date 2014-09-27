@@ -1,0 +1,7 @@
+{
+  "name": "opdracht-imperialmc",
+  "private": true,
+  "dependencies": {
+  	"responsive-nav": "1.0.32"
+  }
+}

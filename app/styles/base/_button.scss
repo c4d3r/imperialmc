@@ -1,0 +1,15 @@
+@mixin button($bg: #FFF, $color: #000, $border-color: #fff, $radius: 4px) {
+	border-radius:4px;
+	background: $bg;
+	color: $color;
+	border: 1px solid $border-color;
+	width:100%;
+	padding: 10px 20px;
+}
+.button-blue {
+	@include button($blue, #fff, #0099C6);
+}
+
+.button-green {
+	@include button($green, #fff, #76C600);
+}
